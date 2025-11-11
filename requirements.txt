@@ -1,3 +1,18 @@
+# Core ML and data (safe subset for server startup)
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.2
+lightgbm==4.5.0
+optuna==3.6.1
+shap==0.46.0
+matplotlib==3.9.2
+Pillow==10.4.0
+
+# Note: PyTorch is intentionally excluded from default install to ensure server stability.
+# To run CNN training locally, install a matching torch/torchvision for your platform, e.g.:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+# FastAPI backend baseline
 fastapi==0.104.1
 uvicorn==0.24.0
 python-dotenv==1.0.0
